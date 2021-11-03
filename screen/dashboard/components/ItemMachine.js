@@ -9,10 +9,13 @@ import {
   Image,
   Pressable,
 } from "native-base";
+import { useNavigation } from "@react-navigation/native";
 
 const ItemMachine = ({ item, color, view, onPress }) => {
   const imgs = item.imgs.length;
   const propiedades = Object.keys(item.propiedades).length;
+
+  const navigation = useNavigation();
 
   if (view) {
     return (
@@ -25,9 +28,13 @@ const ItemMachine = ({ item, color, view, onPress }) => {
   }
 
   return (
-    <>
+    <Pressable
+      onPress={() => {
+        navigation.navigate("Machine");
+      }}
+    >
       <Image
-        source={{ uri: item.imgs[0].uri }}
+        source={{ uri: item.imgs[0] }}
         w="100%"
         h="90%"
         position="absolute"
@@ -48,7 +55,7 @@ const ItemMachine = ({ item, color, view, onPress }) => {
         </Box>
         {/* end info basica */}
       </Box>
-    </>
+    </Pressable>
   );
 };
 

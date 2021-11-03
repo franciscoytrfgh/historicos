@@ -17,7 +17,8 @@ const Dashboard = () => {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         options={{
-          tabBarLabel: "Ultimos escaners",
+          headerShown: true,
+          title: "Ultimos escaners",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="history" color={color} size={26} />
           ),
@@ -36,7 +37,7 @@ const Dashboard = () => {
             />
           ),
         }}
-        name="a"
+        name="scanqr"
         component={ScanScreen}
       />
       <Stack.Screen
@@ -46,7 +47,7 @@ const Dashboard = () => {
             <MaterialCommunityIcons name="account" color={color} size={26} />
           ),
         }}
-        name="b"
+        name="profile"
         component={UserScreen}
       />
     </Stack.Navigator>

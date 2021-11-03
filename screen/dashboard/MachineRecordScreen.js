@@ -8,7 +8,7 @@ const MachineRecordScreen = () => {
   const [view, setView] = React.useState(false);
 
   return (
-    <Box mt="5">
+    <Box>
       <ListMachine view={view} data={ultimosScanner} />
     </Box>
   );
