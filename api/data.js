@@ -5,6 +5,7 @@ const ultimosScanner = [
     detail:
       "El motor trifásico debe el término a que se alimenta de energía eléctrica trifásica. ... El motor trifásico está muy extendido en los usos destinados a instalaciones industriales o comerciales. Esto se debe, por un lado, a que suelen ser más pequeños y manejables que motores monofásicos de la misma potencia",
     company: "CMPC",
+    location: "Area verde",
     date: "10/04/2021",
     author: { id: "1", name: "Luis Barra", img: "" },
     imgs: [
@@ -34,6 +35,7 @@ const ultimosScanner = [
     detail:
       "un panel de control industrial depende de una variedad de diferentes artículos del NEC (Código Eléctrico Nacional). Esto significaba que había una confusión generalizada al respecto. Esto llevaría eventualmente a la introducción del NEC 409.",
     company: "INACAP",
+    location: "Sala 314",
     date: "08/02/2019",
     author: { id: "1", name: "Luis Barra", img: "" },
     imgs: [
@@ -62,6 +64,7 @@ const ultimosScanner = [
     detail:
       "El equipo de aire acondicionado Split Muro esta diseñado y fabricado con los mejores estandares de la industria. Su diseño estilizado y moderno ha ...    ",
     company: "PARICULAR",
+    location: "1re piso, comedor",
     date: "10/04/2021",
     author: { id: "1", name: "Luis Barra", img: "" },
     imgs: [
@@ -88,6 +91,7 @@ const ultimosScanner = [
     detail:
       "The Honda XR250R and XR250L are trail and dual-sport motorcycles made by Honda from 1979 through 2004, as part of the Honda XR series. They have four-stroke, SOHC four-valve 249 cc (15.2 cu in) single-cylinder engines.",
     company: "PARTICULAR",
+    location: "Luis Barra",
     date: "03/12/2021",
     author: { id: "1", name: "Luis Barra", img: "" },
     imgs: [

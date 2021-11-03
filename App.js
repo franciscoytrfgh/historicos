@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { NativeBaseProvider } from "native-base";
+
+import Login from "./screen/login/Login";
+import Dashboard from "./screen/dashboard/Dashboard";
+import AppContext from "./components/AppContext";
 
 export default function App() {
+  const [isLogin, setLogin] = React.useState(false);
+  const [user, setUser] = React.useState();
+
+  const variableGlobales = {
+    isLogin: isLogin,
+    setLogin: setLogin,
+    user: user,
+    setUser: setUser,
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <NativeBaseProvider>
+        <AppContext.Provider value={variableGlobales}>
+          {!isLogin ? <Login /> : <Dashboard />}
+        </AppContext.Provider>
+      </NativeBaseProvider>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
