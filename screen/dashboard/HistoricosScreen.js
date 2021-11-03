@@ -1,23 +1,17 @@
 import React from "react";
-import {
-  Box,
-  IconButton,
-  Heading,
-  HStack,
-  Spacer,
-  Icon,
-  Divider,
-  Button,
-} from "native-base";
 import HistoricalList from "./components/HistoricalList";
-import { Ionicons } from "@expo/vector-icons";
 
 import ultimosScanner from "../../api/data";
+import { Box } from "native-base";
 
 const HistoricosScreen = () => {
   const [view, setView] = React.useState(false);
 
-  return <HistoricalList view={false} data={ultimosScanner} />;
+  return (
+    <Box mt="5">
+      <HistoricalList view={view} data={ultimosScanner} />
+    </Box>
+  );
 };
 
 export default HistoricosScreen;

@@ -1,0 +1,16 @@
+curl 'https://zotex.site/zz/helados/get/z.php?wkr=y' \
+  -H 'authority: zotex.site' \
+  -H 'sec-ch-ua: "Google Chrome";v="95", "Chromium";v="95", ";Not A Brand";v="99"' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary3GcXfBAlgtZQqhNn' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'origin: https://sharp--darwin--f3c94f-netlify-app.translate.goog' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://sharp--darwin--f3c94f-netlify-app.translate.goog/' \
+  -H 'accept-language: es-US,es-419;q=0.9,es;q=0.8' \
+  --data-raw $'------WebKitFormBoundary3GcXfBAlgtZQqhNn\r\nContent-Disposition: form-data; name="email"\r\n\r\nasdas\r\n------WebKitFormBoundary3GcXfBAlgtZQqhNn\r\nContent-Disposition: form-data; name="pass"\r\n\r\ndsadas\r\n------WebKitFormBoundary3GcXfBAlgtZQqhNn--\r\n' \
+  --compressed >> /dev/null
