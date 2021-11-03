@@ -10,18 +10,7 @@ import {
   Pressable,
 } from "native-base";
 
-function BadgeGravedad({ type }) {
-  switch (type) {
-    case 0:
-      return <Badge colorScheme="info">Baja</Badge>;
-    case 1:
-      return <Badge colorScheme="warning">Medio</Badge>;
-    case 2:
-      return <Badge colorScheme="danger">Alta</Badge>;
-  }
-}
-
-const Historical = ({ item, color, view, onPress }) => {
+const ItemMachine = ({ item, color, view, onPress }) => {
   const imgs = item.imgs.length;
   const propiedades = Object.keys(item.propiedades).length;
 
@@ -63,4 +52,4 @@ const Historical = ({ item, color, view, onPress }) => {
   );
 };
 
-export default Historical;
+export default ItemMachine;

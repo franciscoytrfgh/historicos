@@ -1,8 +1,8 @@
 import React from "react";
 import { FlatList } from "native-base";
-import Historical from "./Historical";
+import ItemMachine from "./ItemMachine";
 
-const HistoricalList = ({ view, data }) => {
+const ListMachine = ({ view, data }) => {
   return (
     <FlatList
       p="2"
@@ -11,7 +11,7 @@ const HistoricalList = ({ view, data }) => {
       data={data}
       renderItem={(i) => {
         return (
-          <Historical
+          <ItemMachine
             item={i.item}
             color={i.index % 2 == 0 ? "#222" : "muted.200"}
             view={view}
@@ -23,4 +23,4 @@ const HistoricalList = ({ view, data }) => {
   );
 };
 
-export default HistoricalList;
+export default ListMachine;

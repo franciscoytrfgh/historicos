@@ -2,7 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import HistoricosScreen from "./HistoricosScreen";
+import MachineRecordScreen from "./MachineRecordScreen";
 import UserScreen from "./UserScreen";
 import ScanScreen from "./ScanScreen";
 
@@ -23,7 +23,7 @@ const Dashboard = () => {
           ),
         }}
         name="historicosScreen"
-        component={HistoricosScreen}
+        component={MachineRecordScreen}
       />
       <Stack.Screen
         options={{

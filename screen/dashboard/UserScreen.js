@@ -13,7 +13,6 @@ import {
 } from "native-base";
 
 import AppContext from "../../components/AppContext";
-import HistoricalList from "./components/HistoricalList";
 
 const UserScreen = () => {
   const variableGlobales = React.useContext(AppContext);
@@ -35,9 +34,6 @@ const UserScreen = () => {
           <Text>Total de registros: 10</Text>
         </VStack>
       </HStack>
-
-      {/* Ultimos registros */}
-      <HistoricalList title="Mis ultimos registros" />
 
       <Button
         onPress={() => {
