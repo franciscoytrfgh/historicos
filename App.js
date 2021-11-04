@@ -8,13 +8,13 @@ import Main from "./screen/Main";
 
 export default function App() {
   const [isLogin, setLogin] = React.useState(false);
-  const [user, setUser] = React.useState();
+  const [idMachine, setIdMachine] = React.useState(0);
 
   const variableGlobales = {
     isLogin: isLogin,
     setLogin: setLogin,
-    user: user,
-    setUser: setUser,
+    idMachine: idMachine,
+    setIdMachine: setIdMachine,
   };
 
   return (

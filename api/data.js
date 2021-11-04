@@ -1,6 +1,6 @@
 const ultimosScanner = [
   {
-    id: 1,
+    id: 0,
     title: "Motor trifasico",
     detail:
       "El motor trifásico debe el término a que se alimenta de energía eléctrica trifásica. ... El motor trifásico está muy extendido en los usos destinados a instalaciones industriales o comerciales. Esto se debe, por un lado, a que suelen ser más pequeños y manejables que motores monofásicos de la misma potencia",
@@ -24,7 +24,7 @@ const ultimosScanner = [
   },
 
   {
-    id: 2,
+    id: 1,
     title: "Panel de control",
     detail:
       "un panel de control industrial depende de una variedad de diferentes artículos del NEC (Código Eléctrico Nacional). Esto significaba que había una confusión generalizada al respecto. Esto llevaría eventualmente a la introducción del NEC 409.",
@@ -49,7 +49,7 @@ const ultimosScanner = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: "Aire acondicionado",
     detail:
       "El equipo de aire acondicionado Split Muro esta diseñado y fabricado con los mejores estandares de la industria. Su diseño estilizado y moderno ha ...    ",
@@ -72,7 +72,7 @@ const ultimosScanner = [
     },
   },
   {
-    id: 4,
+    id: 3,
     title: "Honda xr250",
     detail:
       "The Honda XR250R and XR250L are trail and dual-sport motorcycles made by Honda from 1979 through 2004, as part of the Honda XR series. They have four-stroke, SOHC four-valve 249 cc (15.2 cu in) single-cylinder engines.",
@@ -86,7 +86,12 @@ const ultimosScanner = [
       "http://imgcf.ecn.cl/600/91/91e9bc8de872a973987c8e6baae8036dea56eb8e.bin.jpg",
     ],
     propiedades: {
-      name: "value",
+      Kilometraje: "1200km",
+      Anio: "2001",
+      Aceite: "20w50",
+      litro: "1.7",
+      patente: "AABBCC",
+      dueno: "Luis Barra",
     },
     ultimoRegistro: {
       title: "Cambio de valvulas de espace",

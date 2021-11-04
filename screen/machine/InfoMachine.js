@@ -17,8 +17,7 @@ const { width } = Dimensions.get("window");
 const { height } = width * 0.6;
 
 import ultimosScanner from "../../api/data";
-
-const item = ultimosScanner[3];
+import AppContext from "../../components/AppContext";
 
 function BadgeGravedad(type) {
   switch (type) {
@@ -32,6 +31,11 @@ function BadgeGravedad(type) {
 }
 
 export default function InfoMachine() {
+  const variableGlobales = React.useContext(AppContext);
+  console.log(variableGlobales);
+
+  const item = ultimosScanner[variableGlobales.idMachine];
+
   return (
     <Box w="100%" h="100%">
       <ScrollView
@@ -57,8 +61,8 @@ export default function InfoMachine() {
       </ScrollView>
 
       <VStack
-        w="90%"
-        h="70%"
+        w="92%"
+        h="65%"
         bgColor="white"
         top="-10%"
         borderRadius="10"
@@ -94,7 +98,7 @@ export default function InfoMachine() {
           <Text>Gravedad {BadgeGravedad(item.ultimoRegistro.gravedad)}</Text>
         </Box>
         <Divider />
-        <VStack space="1">
+        <ScrollView h="200">
           <Heading size="xs">Propiedades</Heading>
           {Object.keys(item.propiedades).map((key) => {
             return (
@@ -105,7 +109,7 @@ export default function InfoMachine() {
               </HStack>
             );
           })}
-        </VStack>
+        </ScrollView>
       </VStack>
     </Box>
   );

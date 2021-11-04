@@ -10,8 +10,11 @@ import {
   Pressable,
 } from "native-base";
 import { useNavigation } from "@react-navigation/native";
+import AppContext from "../../../components/AppContext";
 
 const ItemMachine = ({ item, color, view, onPress }) => {
+  const variableGlobales = React.useContext(AppContext);
+
   const imgs = item.imgs.length;
   const propiedades = Object.keys(item.propiedades).length;
 
@@ -30,6 +33,7 @@ const ItemMachine = ({ item, color, view, onPress }) => {
   return (
     <Pressable
       onPress={() => {
+        variableGlobales.setIdMachine(item.id);
         navigation.navigate("Machine");
       }}
     >
