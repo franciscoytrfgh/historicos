@@ -31,7 +31,7 @@ const LoginScreen = ({ navigation }) => {
         alignSelf="center"
         shadow="1"
         bgColor="white"
-        w="90%"
+        w={["90%", "30%"]}
         p="5"
         borderRadius="10"
         top="10%"

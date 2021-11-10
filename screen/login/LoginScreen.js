@@ -35,27 +35,15 @@ const LoginScreen = ({ navigation }) => {
         zIndex="-2"
         source={IMG_FONDO}
       />
-      {/* Logo */}
-      <Image
-        // source={LOGO}
-        bgColor="#999"
-        top="15%"
-        alt="logo"
-        w="50%"
-        h="30%"
-        alignSelf="center"
-        borderRadius="full"
-      />
-      {/* Espacio entre el logo y el formulario */}
-      <Spacer />
-      {/* Formulario Login */}
+
       <Box
+        top="50"
         alignSelf="center"
         shadow="1"
         bgColor="white"
-        w="90%"
+        w={["90%", "30%"]}
         p="5"
-        borderTopRadius="10"
+        borderRadius="10"
       >
         <HStack>
           <VStack>
