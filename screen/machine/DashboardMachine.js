@@ -2,6 +2,8 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import InfoMachine from "./InfoMachine";
+import ListHitorical from "./ListHistorical";
+import NewRecordMachine from "./NewRecordMachine";
 
 const Stack = createBottomTabNavigator();
 
@@ -34,8 +36,8 @@ const DashboardMachine = () => {
             <MaterialCommunityIcons name="history" color={color} size={26} />
           ),
         }}
-        name="a"
-        component={TMP}
+        name="Registros"
+        component={ListHitorical}
       />
       <Stack.Screen
         options={{
@@ -48,8 +50,8 @@ const DashboardMachine = () => {
             />
           ),
         }}
-        name="b"
-        component={TMP}
+        name="newRecord"
+        component={NewRecordMachine}
       />
     </Stack.Navigator>
   );

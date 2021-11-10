@@ -13,7 +13,7 @@ const ultimosScanner = [
     ],
     propiedades: {
       name: "value",
-      name1: "value2",
+      name1: "value2x",
     },
     ultimoRegistro: {
       title: "Remplazo ompleto",
@@ -21,6 +21,75 @@ const ultimosScanner = [
       date: "10/04/2024",
       gravedad: 1,
     },
+
+    lastRecord: [
+      {
+        title: "Cambio de estator",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2032",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 0,
+        id: 1,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+      {
+        title: "Cambio de bobina",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2012",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 2,
+        id: 2,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+      {
+        title: "Remplazo",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2022",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 1,
+        id: 3,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+    ],
   },
 
   {
@@ -46,6 +115,52 @@ const ultimosScanner = [
       date: "10/04/2024",
       gravedad: 2,
     },
+    lastRecord: [
+      {
+        title: "Cambio de bobina",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2012",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 2,
+        id: 2,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+      {
+        title: "Remplazo",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2022",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 0,
+        id: 3,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+    ],
   },
 
   {
@@ -70,6 +185,53 @@ const ultimosScanner = [
       date: "10/04/2024",
       gravedad: 0,
     },
+
+    lastRecord: [
+      {
+        title: "Cambio de filtro de aire",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2012",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 0,
+        id: 2,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+      {
+        title: "Remplazo",
+        detail: "Detalle datelle datelle",
+        date: "10/05/2022",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 0,
+        id: 3,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+    ],
   },
   {
     id: 3,
@@ -99,6 +261,53 @@ const ultimosScanner = [
       date: "10/04/2024",
       gravedad: 1,
     },
+
+    lastRecord: [
+      {
+        title: "Cambio de valvulas de escape",
+        detail: "Valvulas de escape dobladas",
+        date: "10/05/2012",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 1,
+        id: 2,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+      {
+        title: "Remplazo de cadena de distribucion",
+        detail: "Cadena con mucha holgura, se realizo el cambio",
+        date: "10/05/2022",
+        by: {
+          name: "Luis Barra",
+          id: 1,
+          img: "",
+        },
+        gravedad: 2,
+        id: 3,
+        imgs: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+        videos: [{ uri: "", title: "", detail: "" }],
+        audios: [
+          { uri: "", title: "", detail: "" },
+          { uri: "", title: "", detail: "" },
+        ],
+      },
+    ],
   },
 ];
 

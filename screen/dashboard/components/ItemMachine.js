@@ -20,23 +20,27 @@ const ItemMachine = ({ item, color, view, onPress }) => {
 
   const navigation = useNavigation();
 
+  const nextPage = () => {
+    variableGlobales.setIdMachine(item.id);
+    navigation.navigate("Machine");
+  };
+
   if (view) {
     return (
-      <HStack bgColor={color} p="3">
-        <Heading size="xs">{item.title}</Heading>
-        <Spacer />
-        <Text>{item.date}</Text>
-      </HStack>
+      <Pressable onPress={nextPage}>
+        <HStack bgColor={color} p="3">
+          <Heading color={color == "muted.200" ? "#111" : "white"} size="xs">
+            {item.title}
+          </Heading>
+          <Spacer />
+          <Text>{item.date}</Text>
+        </HStack>
+      </Pressable>
     );
   }
 
   return (
-    <Pressable
-      onPress={() => {
-        variableGlobales.setIdMachine(item.id);
-        navigation.navigate("Machine");
-      }}
-    >
+    <Pressable onPress={nextPage}>
       <Image
         source={{ uri: item.imgs[0] }}
         w="100%"

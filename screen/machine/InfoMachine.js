@@ -32,7 +32,6 @@ function BadgeGravedad(type) {
 
 export default function InfoMachine() {
   const variableGlobales = React.useContext(AppContext);
-  console.log(variableGlobales);
 
   const item = ultimosScanner[variableGlobales.idMachine];
 
@@ -102,7 +101,7 @@ export default function InfoMachine() {
           <Heading size="xs">Propiedades</Heading>
           {Object.keys(item.propiedades).map((key) => {
             return (
-              <HStack space="2">
+              <HStack space="2" key={key}>
                 <Text>
                   {key}: <Badge>{item.propiedades[key]}</Badge>
                 </Text>

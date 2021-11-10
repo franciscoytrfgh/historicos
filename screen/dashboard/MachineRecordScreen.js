@@ -2,10 +2,25 @@ import React from "react";
 import ListMachine from "./components/ListMachine";
 
 import ultimosScanner from "../../api/data";
-import { Box } from "native-base";
+import { Box, Button } from "native-base";
 
-const MachineRecordScreen = () => {
+const MachineRecordScreen = ({ navigation }) => {
   const [view, setView] = React.useState(false);
+
+  navigation.setOptions({
+    headerRight: () => (
+      <Button
+        title="Info"
+        color="#fff"
+        right="2"
+        onPress={() => {
+          setView(!view);
+        }}
+      >
+        ORDEN
+      </Button>
+    ),
+  });
 
   return (
     <Box>
